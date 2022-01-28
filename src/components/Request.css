@@ -1,0 +1,48 @@
+.request-container {
+  background: #f8f8f8;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.request-inner-container {
+  padding: 1rem 2.5rem;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.request-header {
+  display: flex;
+  justify-content: center;
+}
+
+.request-title {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.name-container {
+  margin-bottom: 1rem;
+}
+
+.telephone-container {
+  margin-bottom: 1rem;
+}
+
+.select-make-container {
+  margin-bottom: 1rem;
+}
+
+.description-container {
+  margin-top: 1.5rem;
+}
+
+.date-container {
+  margin-top: 1rem;
+}
+
+.button-container {
+  margin: 1rem 0;
+}
