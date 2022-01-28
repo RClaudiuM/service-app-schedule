@@ -65,7 +65,7 @@ const Request = () => {
             href="/"
             color="inherit"
           >
-            0 Autentificare
+            Autentificare
           </Button>
         </div>
         <h3 className="request-title">Creare programare nouă</h3>
