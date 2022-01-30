@@ -1,0 +1,45 @@
+.appointment-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 2px solid black;
+  width: 200px;
+}
+
+.appointment-header {
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 60px;
+  border-bottom: 1px solid black;
+}
+
+.appointment-name-container,
+.appointment-time-container {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.appointment-make {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.appointment-button-container {
+  width: 50%;
+  margin: 0.5rem;
+}

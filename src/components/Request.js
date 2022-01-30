@@ -7,6 +7,8 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import { MobileDateTimePicker } from "@mui/lab";
 import { ro } from "date-fns/locale";
 
+const key = "Your_Database_Api_Key";
+
 const Request = () => {
   const [date, setDate] = useState(new Date());
   const [make, setMake] = useState([]);
@@ -33,13 +35,13 @@ const Request = () => {
       setMake(newData);
     };
 
-    getMake("Your_Database_Api_Key");
+    getMake(key);
   }, []);
 
   useEffect(() => {
-    const getModels = async () => {
+    const getModels = async (apiKey) => {
       const response = await fetch(
-        `https://databases.one/api/?format=json&select=model&make_id=${makeId}&api_key=Your_Database_Api_Key`
+        `https://databases.one/api/?format=json&select=model&make_id=${makeId}&api_key=${apiKey}`
       );
       const result = await response.json();
       const data = result.result;
@@ -52,7 +54,7 @@ const Request = () => {
       });
       setModels(newData);
     };
-    getModels();
+    getModels(key);
   }, [makeId]);
 
   return (

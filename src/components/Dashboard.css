@@ -1,0 +1,21 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-header {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: lightgrey;
+  border-bottom: 1px solid black;
+}
+.appointment-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
